@@ -9,3 +9,5 @@
 To test the app, run "pytest" and it will generate a coverage report as well
 
 Emails will the sent at 1st hour of day using celery and redis
+
+P.S. - First ever django project/task
