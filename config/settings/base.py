@@ -206,7 +206,10 @@ CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 
-
+log_dir = os.path.join(BASE_DIR, 'logs')
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+    
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
