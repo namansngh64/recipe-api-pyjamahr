@@ -1,5 +1,5 @@
 version: "3"
-
+# Can also add postgresql service
 services:
   web:
     build: .
